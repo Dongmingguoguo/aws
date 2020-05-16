@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+</head>
+
+<body>
+<form action="/post" method="post">
+    <div style="width: 1240px;border: 1px solid;margin:0px auto;margin-top: 20px">
+        <div style="width: 890px;height: 830px; margin: 0px auto;margin-top: 20px;">
+            <div style="margin: 0 auto">
+                <textarea placeholder="Please input your title" style="border: #b9babb;font-size: 20px;font-weight: 600;height: 34px;width: 90%;margin-left: 45px;margin-top: 10px "
+                          data-constraints="@Required"
+                          name="title"></textarea>
+            </div>
+
+            <div style="margin: 0 auto;width: 807px;height: 30px;margin-top: 10px">
+                <div style="float: left;height: 20px;width: 70px;border: 1px solid;margin-top: 5px">
+                    <button>Button1</button>
+                </div>
+                <div style="float: left;height: 20px;width: 70px;border: 1px solid;margin-top: 5px">
+                    <button>Button2</button>
+                </div>
+                <div style="float: left;height: 20px;width: 70px;border: 1px solid;margin-top: 5px">
+                    <button>Button3</button>
+                </div>
+                <div style="float: left;height: 20px;width: 70px;border: 1px solid;margin-top: 5px">
+                    <button>Button4</button>
+                </div>
+            </div>
+            <div style="margin-top: 10px; width: 809px;min-height: 571px; margin: 0px auto">
+                <textarea name="pcontent" id="pcontent" cols="155" rows="50" style="border: 1px solid"  data-constraints="@Required"></textarea>
+            </div>
+            <div style="padding-left: 50px; margin-top: 40px">
+                <button type="submit">
+                    Sign In
+                      <span class="icon novi-icon mdi mdi-arrow-right-bold-circle-outline">
+                      </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+</body>
+
+</html>

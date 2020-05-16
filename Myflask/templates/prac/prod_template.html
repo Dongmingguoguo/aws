@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+    <body>
+        <p id = 'request_temp'>
+            <button onclick="haha()" id="haha">haha</button>
+
+        </p>
+        <script>
+            $(document).ready(function () {
+                var data2 = document.getElementById('haha').value();
+                $.ajax({
+                    type: 'post',
+                    url: '/xixi',
+                    dataType: 'json',
+                    data: data2,
+                    success: function (data) {
+                        for (var i = 0; i < data.length; i++) {
+                            $('#sec').append('<tr>' +
+                                '<th></th>' +
+                                '<th class="text-regular text-dark big">' + data[i][0] + '</th>' +
+                                '<th class="text-regular text-dark big">' + data[i][2] + '</th>' +
+                                '<th class="text-regular text-dark big">' + data[i][1] + '</th>' +
+                                '<th class="text-regular text-dark big">10</th>' +
+                                '<th class="text-regular text-dark big">Yes</th>' +
+                                '<th class="text-regular text-dark big">' + data[i][3] + '</th>'
+                                + '</tr>');
+                }
+            }
+        })
+    })
+        </script>
+    </body>
+</html>

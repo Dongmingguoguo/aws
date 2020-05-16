@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>GMIT-Forum</title>
+</head>
+
+<body>
+<div class="container" style="border: 1px solid grey">
+    <div class="container">
+        <img src="../static/images/gmitlogo.jpg" class="img-rounded" style="height: 100px;">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="https://learnonline.gmit.ie/">Learnonline</a>
+        <a class="navbar-brand" href="https://outlook.office365.com/mail">Outlook</a>
+        <a class="navbar-brand" href="https://timetable.gmit.ie/">Timetable</a>
+
+        <div class="collapse navbar-collapse" id="navbar Supported Content">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <p class="float-left" style="margin-top: 13px">Welcome, {{userID}} <button><a
+                            href="/logout">Logout</a> </button></p>
+
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div>
+        <article class="post post-modern">
+            <!-- Post media-->
+            <!-- Post content-->
+            <section class="post-content text-left novi-excluded" style="border: 1px solid grey">
+                <div class="post-meta small pull-sm-right"><span
+                        class="text-middle icon-xxs mdi mdi-clock text-primary novi-icon"></span>
+                    <time class="font-italic text-middle text-dark" datetime="2018-01-01">3 days ago</time>
+                </div>
+                <ul class="list-inline offset-top-14 offset-md-top-0">
+                    <li class="list-inline-item text-middle">
+                        <div class="post-tags group-xs"><a
+                                class="label-custom label-lg-custom label-rounded-custom label-primary"
+                                href="#">News</a>
+                        </div>
+                    </li>
+                    <li class="list-inline-item text-middle">
+                        <div class="icon icon-xxs text-dark novi-icon mdi mdi-pen"></div>
+                    </li>
+                </ul>
+                <!-- Post Title-->
+                <div class="post-title">
+                    <h6 class="offset-top-24"><a href="#">Top 50 international companies to consider your potential
+                        employer.</a></h6>
+                </div>
+                <!-- Post Body-->
+                <div class="post-body offset-top-20">
+                    <p>There are thousands of possibilities that can help you find the job of your dream. But how many
+                        of them will really lead you to the success of working at the well-known international company?
+                        Let’s find it out.</p>
+                </div>
+            </section>
+
+        </article>
+    </div>
+
+    <section class="section-98 section-md-110 novi-background" >
+        <div class="container">
+            <h1>Latest</h1>
+            <hr class="divider divider-sm bg-gray-darker">
+            <!-- Bootstrap Table-->
+            <div class="">
+
+                <table id="sec" class="table table-striped">
+                    <tr>
+                        <th></th>
+                        <th class="text-regular text-dark big" id="title">Title</th>
+                        <th class="text-regular text-dark big">Department</th>
+                        <th class="text-regular text-dark big">Whoami</th>
+                        <th class="text-regular text-dark big">Reply</th>
+                        <th class="text-regular text-dark big">Close</th>
+                        <th class="text-regular text-dark big">Date</th>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="row justify-content-sm-center offset-top-66">
+                <div class="col-sm-5 col-md-3 col-lg-3 col-xl-2"><a class="btn btn-primary d-sm-block"
+                                                                    href="/ad">POST</a></div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer">
+        <footer style="margin-left: 300px "
+                class="section novi-background section-relative section-top-66 section-bottom-34 page-footer bg-black context-dark">
+            <div class="container offset-top-50">
+                <p class="small text-darker">Created for GMIT &copy; <span class="copyright-year"></span> . <a
+                        href="http://www.gmit.ie">GALWAY INSTITUTE OF TECHNOLOGY</a> . Design&nbsp;by&nbsp;Dongming Guo
+                </p>
+            </div>
+        </footer>
+    </div>
+
+</div>
+
+<script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js "
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
+        crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+        crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
+        crossorigin="anonymous "></script>
+<script src="../../static/js/core.min.js"></script>
+<script src="../../static/js/script.js"></script>
+
+<script type=text/javascript>
+    $(window).ready(function () {
+        $.ajax({
+            type: 'GET',
+            url: '/data_deliver',
+            dataType: 'json',
+            success: function (data) {
+                for (let i = 0; i < data.length; i++) {
+                    console.log(data[1]);
+                    $('#sec').append('<tr>' +
+                        '<th></th>' +
+                        '<th class="text-regular text-dark big" >' + '<a href="' + data[i][4] + '">' + data[i][0] + '</a>' + '</th>' +
+                        '<th class="text-regular text-dark big">' + data[i][2] + '</th>' +
+                        '<th class="text-regular text-dark big">' + data[i][1] + '</th>' +
+                        '<th class="text-regular text-dark big">10</th>' +
+                        '<th class="text-regular text-dark big">Yes</th>' +
+                        '<th class="text-regular text-dark big">' + data[i][3] + '</th>'
+                        + '</tr>');
+                }
+            }
+        })
+    });
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
